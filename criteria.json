@@ -1,0 +1,40 @@
+{
+  "D2": [
+    "Rechaza UNIQUE posterior como protección del efecto remoto",
+    "Clave compuesta estable",
+    "Reserva/intención durable antes de enviar",
+    "No reenvía un estado incierto tras expirar deduplicación",
+    "No recupera lease permitiendo doble envío con worker viejo sin fencing remoto",
+    "Distingue at-most-once de progreso y permite bloquear caída antes del envío"
+  ],
+  "D2b": [
+    "Rechaza lease de cinco minutos como garantía",
+    "Clave compuesta estable",
+    "Reserva durable previa al envío",
+    "Incierto a diez horas bloqueado sin nueva impresión",
+    "Worker viejo no compite con nuevo emisor autorizado",
+    "Caída antes de envío puede dejar cero cartas; no promete exactly-once"
+  ],
+  "D3": [
+    "C1 permitir",
+    "C2 denegar",
+    "C3 denegar",
+    "C4 permitir 90 días y ocultar importes",
+    "C5 denegar",
+    "C6 denegar",
+    "C7 denegar",
+    "C8 denegar extremo exclusivo",
+    "Caché segmentada según acceso usuario/propiedad/rol y permisos efectivos",
+    "Invalidación/revalidación por revocación de permisos y cambios de datos restricted/borrados"
+  ],
+  "D4": [
+    "Agregados Alfa27% Beta73%",
+    "Por categoría Alfa90/20% Beta80/10%",
+    "Producción Alfa27% Beta17%",
+    "Observado Alfa20.95 Beta14.48 minutos",
+    "Producción Alfa20.95 Beta27.92 minutos",
+    "46pp y 170.37% relativo (2.70x), no triplica",
+    "No atribuye causalidad a comparación no aleatorizada",
+    "Transporte condicional y propuesta comparación pareada/aleatorizada con mezcla y coste total"
+  ]
+}

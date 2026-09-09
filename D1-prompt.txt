@@ -1,0 +1,26 @@
+﻿CALIBRATION D1 — synthetic incident. Answer in Spanish, max 650 words. Diagnose only from the evidence; give cause, minimal repair, a regression check and any limits on certainty.
+
+A service imports payment records. Product rules: exactly one capture per (tenant, order); retries after an uncertain response must not duplicate a capture. Different tenants may reuse order IDs. An upstream retry preserves event ID but generates a new request ID. Deployments restart the worker. Redis is shared across tenants. The provider idempotency ledger lasts 24h; upstream may retry for 72h. No provider lookup by order is currently available.
+
+worker.py (pseudocode):
+# Redis guard prevents duplicates, enabled by default.
+class Worker:
+  def __init__(self, provider, redis, guard=True): ...
+  def handle(self,e):
+    if self.guard and not redis.set('seen:'+e.order_id, '1', nx=True, ex=3600):
+      return 'duplicate'
+    r = provider.capture(e.amount, idempotency_key=e.request_id)
+    db.insert(tenant=e.tenant, order=e.order_id, provider_id=r.id)
+    return 'ok'
+bootstrap.py: worker = Worker(provider, redis, guard=env.get('GUARD','0') == '1')
+Deployment manifest: GUARD='0'
+DB currently has no unique constraint; operations can run concurrently.
+
+Observed events:
+12:00 tenant A order 41 event E9 request R1: provider captured p77, client timed out before receiving response; no DB row.
+12:02 tenant A order 41 event E9 request R2: provider captured p78, DB row inserted.
+12:03 tenant B order 41 event E10 request R3: provider captured p79, DB row inserted.
+
+A teammate suggests: 'Set GUARD=1 and use order_id for the provider idempotency key. Add a unique order_id constraint. That guarantees exactly once; ship it.'
+
+State whether this proposal meets the product rules, distinguish the observed cause from latent risks, and explain what can actually be guaranteed with the stated provider interface. Do not assume access to further files or a payment reversal API.

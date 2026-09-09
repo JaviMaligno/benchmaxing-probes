@@ -1,0 +1,17 @@
+Revisión sintética de especificación. Responde en español, máximo 600 palabras, sin herramientas. Devuelve reglas finales implementables y decisión PERMITIR/DENEGAR con motivo para cada caso C1-C8. Evalúa también la propuesta final del compañero. Cada nota posterior modifica exclusivamente lo que dice explícitamente; lo demás sigue vigente.
+09:00: exportación de facturas. Todos los usuarios solo ven su tenant activo. Miembros ven solo sus facturas; gestores ven todas las facturas de su tenant. Invitados nunca exportan. Las facturas borradas lógicamente no salen. El rol de administrador de plataforma NO concede acceso a datos de tenants. Las exportaciones reutilizables se almacenan en caché.
+09:10: filtro temporal según fecha UTC de emisión, intervalo [inicio, fin), máximo 31 días. Fechas en formato YYYY-MM-DD son medianoche UTC, no zona local.
+09:20: para auditoría se añade permiso audit_export, que permite incluir borradas SOLO a gestores con ese permiso y con include_deleted=true. No cambia permisos de miembros ni invitados.
+09:30: para una migración, gestores con migration_export pueden pedir hasta 90 días. No cambia otras reglas. El límite general sigue siendo 31 días.
+09:40: quitar importes de toda factura marcada restricted; restricted no impide incluir el resto de campos. Ningún permiso anterior exime de esta regla.
+09:50: permiso cross_tenant_support permite a administradores de plataforma cambiar el tenant activo mediante el selector. Después del cambio se exige igualmente pertenencia y rol en el tenant de destino. Este permiso no los convierte en miembros ni gestores.
+10:00: exportación de ejemplo desde 2026-01-01 hasta 2026-02-01; ambas fechas UTC. Todos los ejemplos siguientes usan esas fechas salvo donde se diga. Todas las facturas citadas se emitieron el 2026-01-15 salvo C8.
+C1: gestor de A sin permisos extra, factura normal de A.
+C2: miembro de A con audit_export, factura propia de A borrada, include_deleted=true.
+C3: gestor de A con audit_export, factura borrada de A, include_deleted=false.
+C4: gestor de A con migration_export, rango 2026-01-01 a 2026-04-01, factura restricted de A no borrada.
+C5: invitado de A con audit_export y migration_export, factura de A no borrada.
+C6: admin de plataforma con cross_tenant_support, tenant activo B, sin pertenencia a B, factura de B.
+C7: miembro de A, factura de otro miembro de A no borrada.
+C8: gestor de A, factura normal de A emitida exactamente 2026-02-01T00:00:00Z.
+El compañero propone: cachear por (tenant,inicio,fin,include_deleted) y compartir el resultado entre todos los usuarios del tenant. Afirma que, como ya filtra por tenant, no puede filtrar datos entre usuarios. ¿Es correcto? Define qué debe incorporar o revalidar una reutilización segura. No te limites a decir "añadir usuario": aborda cambios de rol/permisos y borrado/restricción posteriores a cachear.

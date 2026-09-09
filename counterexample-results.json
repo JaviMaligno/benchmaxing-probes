@@ -1,0 +1,84 @@
+{
+  "D2": {
+    "retry_with_local_check": {
+      "effects": 2,
+      "trace": [
+        {
+          "worker": "B",
+          "time_h": 1,
+          "action": "new external effect"
+        },
+        {
+          "worker": "A",
+          "time_h": 50,
+          "action": "new external effect"
+        }
+      ]
+    },
+    "single_nontransferable_permit": {
+      "effects": 1,
+      "trace": [
+        {
+          "worker": "B",
+          "time_h": 1,
+          "action": "blocked: non-transferable emission permit"
+        },
+        {
+          "worker": "A",
+          "time_h": 50,
+          "action": "new external effect"
+        }
+      ]
+    }
+  },
+  "D2b": {
+    "retry_with_local_check": {
+      "effects": 2,
+      "trace": [
+        {
+          "worker": "B",
+          "time_h": 1,
+          "action": "new external effect"
+        },
+        {
+          "worker": "A",
+          "time_h": 10,
+          "action": "new external effect"
+        }
+      ]
+    },
+    "single_nontransferable_permit": {
+      "effects": 1,
+      "trace": [
+        {
+          "worker": "B",
+          "time_h": 1,
+          "action": "blocked: non-transferable emission permit"
+        },
+        {
+          "worker": "A",
+          "time_h": 10,
+          "action": "new external effect"
+        }
+      ]
+    }
+  },
+  "D4": {
+    "observed_success": [
+      0.27,
+      0.73
+    ],
+    "projected_success": [
+      0.27,
+      0.17
+    ],
+    "observed_minutes": [
+      20.95,
+      14.48
+    ],
+    "projected_minutes": [
+      20.95,
+      27.92
+    ]
+  }
+}
