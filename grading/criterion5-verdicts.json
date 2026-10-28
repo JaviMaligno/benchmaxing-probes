@@ -1,0 +1,226 @@
+{
+ "D2/01": {
+  "model_run": "claude-fable-5-r2",
+  "verdict": "fails"
+ },
+ "D2/02": {
+  "model_run": "claude-opus-5-r3",
+  "verdict": "fails"
+ },
+ "D2/03": {
+  "model_run": "glm-5.3-r3",
+  "verdict": "fails"
+ },
+ "D2/04": {
+  "model_run": "qwen3.8-2.4t-a95b-r2",
+  "verdict": "fails"
+ },
+ "D2/05": {
+  "model_run": "glm-5.3-r2",
+  "verdict": "fails"
+ },
+ "D2/06": {
+  "model_run": "gemini-4-argon-r3",
+  "verdict": "holds"
+ },
+ "D2/07": {
+  "model_run": "kimi-k3.1-pro-r2",
+  "verdict": "holds"
+ },
+ "D2/08": {
+  "model_run": "claude-fable-5-r1",
+  "verdict": "fails"
+ },
+ "D2/09": {
+  "model_run": "glm-5.3-r1",
+  "verdict": "fails"
+ },
+ "D2/10": {
+  "model_run": "claude-fable-5-r3",
+  "verdict": "fails"
+ },
+ "D2/11": {
+  "model_run": "kimi-k3.1-pro-r1",
+  "verdict": "fails"
+ },
+ "D2/12": {
+  "model_run": "gemini-4-argon-r1",
+  "verdict": "fails"
+ },
+ "D2/13": {
+  "model_run": "qwen3.8-2.4t-a95b-r3",
+  "verdict": "fails"
+ },
+ "D2/14": {
+  "model_run": "kimi-k3.1-pro-r3",
+  "verdict": "holds"
+ },
+ "D2/15": {
+  "model_run": "claude-opus-5-r2",
+  "verdict": "fails"
+ },
+ "D2/16": {
+  "model_run": "claude-opus-5-r1",
+  "verdict": "fails"
+ },
+ "D2/17": {
+  "model_run": "qwen3.8-2.4t-a95b-r1",
+  "verdict": "fails"
+ },
+ "D2/18": {
+  "model_run": "deepseek-v4-pro-0813-r2",
+  "verdict": "fails"
+ },
+ "D2/19": {
+  "model_run": "deepseek-v4-pro-0813-r1",
+  "verdict": "fails"
+ },
+ "D2/20": {
+  "model_run": "gemini-4-argon-r2",
+  "verdict": "fails"
+ },
+ "D2/21": {
+  "model_run": "deepseek-v4-pro-0813-r3",
+  "verdict": "fails"
+ },
+ "D2b/01": {
+  "model_run": "gemini-4-argon-r3",
+  "verdict": "holds"
+ },
+ "D2b/02": {
+  "model_run": "gemini-4-argon-r1",
+  "verdict": "holds"
+ },
+ "D2b/03": {
+  "model_run": "claude-fable-5-r3",
+  "verdict": "fails"
+ },
+ "D2b/04": {
+  "model_run": "deepseek-v4-pro-0813-r1",
+  "verdict": "fails"
+ },
+ "D2b/05": {
+  "model_run": "qwen3.8-2.4t-a95b-r1",
+  "verdict": "fails"
+ },
+ "D2b/06": {
+  "model_run": "claude-fable-5-r1",
+  "verdict": "fails"
+ },
+ "D2b/07": {
+  "model_run": "glm-5.3-r3",
+  "verdict": "fails"
+ },
+ "D2b/08": {
+  "model_run": "qwen3.8-2.4t-a95b-r3",
+  "verdict": "fails"
+ },
+ "D2b/09": {
+  "model_run": "kimi-k3.1-pro-r1",
+  "verdict": "holds"
+ },
+ "D2b/10": {
+  "model_run": "deepseek-v4-pro-0813-r2",
+  "verdict": "holds"
+ },
+ "D2b/11": {
+  "model_run": "glm-5.3-r2",
+  "verdict": "fails"
+ },
+ "D2b/12": {
+  "model_run": "claude-opus-5-r2",
+  "verdict": "fails"
+ },
+ "D2b/13": {
+  "model_run": "qwen3.8-2.4t-a95b-r2",
+  "verdict": "holds"
+ },
+ "D2b/14": {
+  "model_run": "deepseek-v4-pro-0813-r3",
+  "verdict": "fails"
+ },
+ "D2b/15": {
+  "model_run": "claude-fable-5-r2",
+  "verdict": "fails"
+ },
+ "D2b/16": {
+  "model_run": "claude-opus-5-r1",
+  "verdict": "fails"
+ },
+ "D2b/17": {
+  "model_run": "kimi-k3.1-pro-r3",
+  "verdict": "holds"
+ },
+ "D2b/18": {
+  "model_run": "gemini-4-argon-r2",
+  "verdict": "holds"
+ },
+ "D2b/19": {
+  "model_run": "claude-opus-5-r3",
+  "verdict": "fails"
+ },
+ "D2b/20": {
+  "model_run": "glm-5.3-r1",
+  "verdict": "holds"
+ },
+ "D2b/21": {
+  "model_run": "kimi-k3.1-pro-r2",
+  "verdict": "holds"
+ },
+ "round1/D2/A": {
+  "model_run": "glm-5.3",
+  "verdict": "fails"
+ },
+ "round1/D2/B": {
+  "model_run": "gemini-4-argon",
+  "verdict": "holds"
+ },
+ "round1/D2/C": {
+  "model_run": "deepseek-v4-pro-0813",
+  "verdict": "fails"
+ },
+ "round1/D2/D": {
+  "model_run": "fable-5",
+  "verdict": "fails"
+ },
+ "round1/D2/E": {
+  "model_run": "kimi-k3.1-pro",
+  "verdict": "holds"
+ },
+ "round1/D2/F": {
+  "model_run": "qwen3.8-2.4t-a95b",
+  "verdict": "fails"
+ },
+ "round1/D2/G": {
+  "model_run": "opus-5",
+  "verdict": "fails"
+ },
+ "round1/D2b/A": {
+  "model_run": "deepseek-v4-pro-0813",
+  "verdict": "holds"
+ },
+ "round1/D2b/B": {
+  "model_run": "opus-5",
+  "verdict": "fails"
+ },
+ "round1/D2b/C": {
+  "model_run": "kimi-k3.1-pro",
+  "verdict": "holds"
+ },
+ "round1/D2b/D": {
+  "model_run": "gemini-4-argon",
+  "verdict": "holds"
+ },
+ "round1/D2b/E": {
+  "model_run": "glm-5.3",
+  "verdict": "fails"
+ },
+ "round1/D2b/F": {
+  "model_run": "fable-5",
+  "verdict": "fails"
+ },
+ "round1/D2b/G": {
+  "model_run": "qwen3.8-2.4t-a95b",
+  "verdict": "holds"
+ }
+}

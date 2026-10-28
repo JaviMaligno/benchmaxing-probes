@@ -1,0 +1,31 @@
+{
+  "case": "D2",
+  "requested_model": "z-ai/glm-5.3",
+  "actual_model": "z-ai/glm-5.3",
+  "provider": "Wafer",
+  "finish_reason": "stop",
+  "seconds": 49.1,
+  "usage": {
+    "prompt_tokens": 490,
+    "completion_tokens": 9469,
+    "total_tokens": 9959,
+    "cost": 0.01334431,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01334431,
+      "upstream_inference_prompt_cost": 8.771e-05,
+      "upstream_inference_completions_cost": 0.0132566
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8426,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

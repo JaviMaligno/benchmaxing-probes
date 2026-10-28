@@ -1,0 +1,17 @@
+**Veredicto: no cumple.** (1) La memoria del proveedor (6 h) es más corta que la ventana de reentrega (48 h): a t+10 h, el "volver a enviar al expirar el lease" produce una segunda impresión. No es un "riesgo inevitable": la regla permite detener la automatización en incertidumbre. (2) El lease no cerca al worker pausado: al reanudarse actúa con estado obsoleto y reenvía. (3) Confunde prevención de duplicados con garantía de avance.
+
+**Alternativa (estados persistentes).** Tabla `cartas(organización, expediente)` con UNIQUE compuesto; columnas `estado, owner, lease_expira, primer_envio, attempt_uuid`; tabla `intentos(message_uuid, attempt_uuid UNIQUE)` para idempotencia. Toda transición es un UPDATE condicional (CAS) y se **persiste antes del efecto externo**.
+
+- **NUEVO** (operación sin fallos): reclamar por CAS → `EN_VUELO` con `owner` y `primer_envio=ahora`; commit; luego `print(organization:case, body)` con clave estable que incluye la organización (expedientes repetidos no colisionan). Otro worker concurrente ve `EN_VUELO` y no actúa.
+- **Respuesta aceptada**: CAS `EN_VUELO→COMPLETADO` (WHERE owner=yo). `COMPLETADO` es terminal: cualquier reentrega posterior (48 h, mismo `message_uuid`) lee y termina sin imprimir.
+- **Incierto** (respuesta perdida, caída o lease vencido): reenvío automático solo mientras `ahora < primer_envio + 4 h` (margen bajo las 6 h, cuyo reloj arranca en la aceptación, nunca antes de `primer_envio`). En esa ventana el reenvío no duplica: si el primero fue aceptado, el proveedor deduplica; si nunca llegó, imprime ahora (avance). Agotada la ventana → `INCERTIDUMBRE`: detener, alertar duraderamente y pasar a revisión humana; solo una decisión documentada marca `COMPLETADO` o reabre.
+- **Worker antiguo**: al reanudarse, releer la fila **antes de cualquier efecto o transición** y proceder solo si `estado=EN_VUELO`, `owner=él` y lease vigente; en otro caso descartar el intento sin llamar a `print`. Residual no cercable: pausa entre la relectura y el envío; es estrecho, se audita, y nunca se infiere "no se hizo" de un timeout.
+
+**Prevención vs garantía de impresión.** Sin duplicados: terminal `COMPLETADO` + reintentos solo dentro de la ventana de deduplicación + `INCERTIDUMBRE` en lugar de reenvío ciego. Garantía de impresión: lo nuevo se imprime por el camino normal; la caída pre-envío se recupera por reentrega dentro de la ventana; lo incierto depende de alerta + humano, **no** de que la cola reintente tras 6 h (eso sería el duplicado).
+
+**Pruebas.**
+- **t+10 h**: aceptada a las 10:00, respuesta perdida. Reentrega a las 20:00: ventana (hasta 14:00) agotada → afirmar que no se emite segunda llamada a `print`, estado `INCERTIDUMBRE`, ≤1 carta física. Variante: reentrega a las 10:20 dentro de ventana → reclama, reenvía la misma clave, proveedor deduplica o imprime una única vez, se marca `COMPLETADO`; reentregas posteriores no operan.
+- **Caída antes del envío**: reclama a las 09:00, commit, cae antes de `print`. Reentrega a las 09:10 (dentro de ventana) → reenvía → imprime una vez → `COMPLETADO`. El worker viejo al despertar rele: estado ajeno o `COMPLETADO` → aborta sin llamar a `print`.
+- **Dos organizaciones, mismo expediente**: claves `orgA:C` y `orgB:C`, filas distintas por el UNIQUE compuesto → ambas se imprimen exactamente una vez; completar A no bloquea ni marca B.
+
+Solo se usa `print(key, body)`; no se asume consulta, cancelación ni que un timeout implique que el trabajo remoto no se hizo.

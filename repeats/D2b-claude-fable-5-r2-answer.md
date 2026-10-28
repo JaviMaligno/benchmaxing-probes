@@ -1,0 +1,19 @@
+**No cumple.** La propuesta acierta en usar `organization:case` como key (no `attempt_uuid`, que cambia en cada reentrega y anula la deduplicación del proveedor) y en el UNIQUE compuesto. Falla en el lease: al expirar los cinco minutos, otro worker reenvía automáticamente. En el escenario dado, la aceptación de las 10:00 arrancó la ventana de seis horas del proveedor; a t+10h esa ventana expiró, y el reenvío automático imprime una segunda carta. No es un "riesgo inevitable que hay que aceptar": la regla permite detener para revisión en casos inciertos, así que automatizar el reenvío fuera de ventana viola el máximo de una carta pudiendo no hacerlo. Además, el lease no cerca nada: el worker viejo pausado puede reanudarse y llamar a `print` aunque su lease haya expirado hace horas.
+
+**Alternativa: máquina de estados persistente**
+
+Tabla `impresiones(org, expediente, estado, inicio_primer_envio, UNIQUE(org, expediente))`. Estados: `ENVIANDO`, `COMPLETADO`, `REVISION`.
+
+- **Nuevo:** transacción que inserta `ENVIANDO` con `inicio_primer_envio = now()`. El UNIQUE hace que, de dos workers concurrentes, uno inserte y el otro lea la fila existente. Registrar la intención **antes** del efecto externo es clave: así una caída nunca deja una carta impresa sin rastro en la DB (el fallo de la implementación original, que insertaba el recibo después). Tras el commit, llamar `print("org:case", body)`; con respuesta confirmada, actualizar a `COMPLETADO`.
+- **Reentrega con fila existente:** si `COMPLETADO`, confirmar el mensaje sin imprimir. Si `ENVIANDO` y `now < inicio_primer_envio + 6h − margen` (p. ej. margen de 1h): reintentar con la misma key; si el envío anterior fue aceptado, el proveedor deduplica; si no, imprime. No asumimos que la falta de respuesta signifique que no se imprimió: nos apoyamos solo en la memoria de keys del proveedor, anclada conservadoramente al inicio del primer intento (ninguna aceptación pudo ocurrir antes).
+- **Incierto:** si `ENVIANDO` y pasó el plazo, marcar `REVISION` y detener la automatización. Un humano verifica físicamente y marca `COMPLETADO` o reencola.
+- **Worker viejo reanudado:** antes de cada llamada a `print`, releer la fila en transacción; si está en `COMPLETADO` o `REVISION`, o venció el plazo, abortar. Queda una ventana irreducible: el worker verifica, se pausa justo entre la verificación y la llamada, y despierta tras el plazo. Sin cercado en el proveedor no se elimina; esta alternativa la reduce de minutos (lease) a microsegundos y aplica el margen de seguridad para que ninguna decisión deliberada caiga fuera de ventana.
+
+**Dos garantías separadas.** La prevención de duplicados la dan el UNIQUE, la key `org:case` dentro de ventana y la parada en `REVISION` fuera de ella. La garantía de que toda carta salga es independiente: las reentregas de 48h reintentan los `ENVIANDO` vigentes; una alarma detecta filas estancadas en `ENVIANDO` o `REVISION` y un barrido tras 48h las escala. `REVISION` degrada latencia, nunca produce duplicados.
+
+**Pruebas**
+
+1. **t+10h:** fila `ENVIANDO` con inicio 10:00; llega reentrega. Verificar: cero llamadas a `print`, estado pasa a `REVISION`.
+2. **Caída antes del envío:** fila `ENVIANDO` sin llamada emitida; reentrega dentro de ventana reintenta con la misma key. Verificar: exactamente una carta, estado `COMPLETADO`.
+3. **Dos organizaciones, mismo expediente:** keys `org1:case` y `org2:case`; el UNIQUE compuesto admite ambas filas. Verificar: dos impresiones, dos `COMPLETADO`.
+4. **Concurrencia:** dos workers con el mismo mensaje; el segundo INSERT choca con el UNIQUE y relee. Verificar: una sola carta.
