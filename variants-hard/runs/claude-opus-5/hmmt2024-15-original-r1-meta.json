@@ -1,0 +1,50 @@
+{
+  "item": "hmmt2024-15",
+  "version": "original",
+  "rep": 1,
+  "requested_model": "claude-opus-5",
+  "actual_models": [
+    "claude-opus-5"
+  ],
+  "stop_reason": "end_turn",
+  "subtype": "success",
+  "is_error": false,
+  "seconds": 22.1,
+  "cost_list_usd": 0.05090650000000001,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 1036,
+    "cache_read_input_tokens": 2573,
+    "output_tokens": 1570,
+    "output_tokens_details": {
+      "thinking_tokens": 1038
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 1036,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1570,
+        "cache_read_input_tokens": 2573,
+        "cache_creation_input_tokens": 1036,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1036
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": ""
+}

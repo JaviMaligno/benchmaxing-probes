@@ -1,0 +1,1 @@
+Voy a verificar con una enumeración por fuerza bruta rápida (solo 2¹² = 4096 casos), además de razonar la estructura.

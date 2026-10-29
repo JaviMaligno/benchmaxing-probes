@@ -1,0 +1,50 @@
+{
+  "item": "apex2025-01",
+  "version": "original",
+  "rep": 1,
+  "requested_model": "claude-opus-5",
+  "actual_models": [
+    "claude-opus-5"
+  ],
+  "stop_reason": "end_turn",
+  "subtype": "success",
+  "is_error": false,
+  "seconds": 466.2,
+  "cost_list_usd": 0.9945709999999999,
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 4034,
+    "cache_read_input_tokens": 3222,
+    "output_tokens": 38104,
+    "output_tokens_details": {
+      "thinking_tokens": 37128
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 4034,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 6104,
+        "cache_read_input_tokens": 2573,
+        "cache_creation_input_tokens": 1086,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1086
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": ""
+}

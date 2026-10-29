@@ -1,0 +1,1 @@
+\(\boxed{40\text{ segundos}}\)

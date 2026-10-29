@@ -1,0 +1,1 @@
+El valor esperado es \(\displaystyle \frac{1409}{1155}\).

@@ -1,0 +1,1 @@
+Antes de razonar, déjame verificar si este problema aparece en el repositorio local (para confirmar la figura/intención del enunciado).

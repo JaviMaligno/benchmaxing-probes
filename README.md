@@ -31,3 +31,19 @@ The experiment used one valid run per case/model. It cannot estimate variability
 ## Read the article
 
 The accompanying article is a draft awaiting review. This repository contains the evidence, not a general model ranking. Prompts and responses can be read directly on GitHub; use Code → Download ZIP or clone the repository to run the offline check.
+
+## Expansion and variants test
+
+- `assessment-expansion.md`, `openrouter/`, `repeats/`, `grading/`: five more models and D2/D2b repeats
+  (published as the article's 28 October update).
+- `variants/`: GSM1k-style test on 120 public items (AIME 2025, MATH-500 level 5) and verified
+  equivalent variants, seven models, two runs each. `preregister.md` (fixed before running),
+  `deviations.md`, `assessment.md` (results), `selection.json` (frozen pairs), `items/<id>/solve.py`
+  (variant answer checks), `runs/` (raw answers and metadata), `grade.py`, `analyze.py`, `results*.json`.
+- `variants-hard/`: the same on 91 harder items (HMMT February 2024/2025, CMIMC 2025), one run each.
+  APEX 2025 was dropped on cost; see `deviations.md`. `runs/_limit-hit/` keeps the Claude runs cut by a
+  plan limit, re-run as preregistered.
+
+Recheck without calling models: `python grade.py && python analyze.py` in `variants/`, and
+`python grade.py && REPS=1 python analyze.py` in `variants-hard/`. Model answers that quoted the
+working directory have the local path prefix replaced by `<repo>/` or `<repos>`.

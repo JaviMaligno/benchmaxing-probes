@@ -1,0 +1,1 @@
+Voy a calcular esto con un script rápido de Python: recorrer los múltiplos de 77 menores que 1,000,000 y sumar sus dígitos impares.

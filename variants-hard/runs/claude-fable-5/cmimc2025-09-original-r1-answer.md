@@ -1,0 +1,1 @@
+Voy a calcularlo y verificar la factorización con un cálculo rápido en Python.

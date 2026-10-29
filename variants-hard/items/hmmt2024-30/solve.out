@@ -1,0 +1,4 @@
+original (4, 5, 10) closed form: 9*sqrt(410)/5 = 36.44722211636986 | numeric perimeters: {36.4472221}
+original answer reproduced: 9*sqrt(410)/5
+variant (3, 5, 10) closed form: 18*sqrt(85)/5 = 33.1903600462544 | numeric perimeters: {33.19036}
+EXIT 0

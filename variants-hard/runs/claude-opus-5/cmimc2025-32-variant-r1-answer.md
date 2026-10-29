@@ -1,0 +1,1 @@
+Voy a resolver esto con una cadena de Markov exacta. La clave: la arista se elige de forma uniforme e independiente de la configuración, así que la pareja (posición del 6, posición de $a$) es por sí misma una cadena de Markov.

@@ -1,0 +1,1 @@
+I can run numeric checks but final response only. Should have tool not necessary but okay. I'll use Bash python -I with heredoc? instructions say run python reads files with -I, no files. fine.

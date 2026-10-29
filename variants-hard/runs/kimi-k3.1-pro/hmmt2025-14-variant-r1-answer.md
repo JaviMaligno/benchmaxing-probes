@@ -1,0 +1,1 @@
+Voy a contar los caminos según sus movimientos entre las tres filas, teniendo en cuenta que no se puede repetir ningún punto.

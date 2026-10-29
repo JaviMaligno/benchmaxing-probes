@@ -1,0 +1,4 @@
+2026-10-29T11:34:28Z stopped by operator after cost check (APEX ~0.40 USD per OpenRouter run); in-flight runs discarded
+2026-10-29T12:47:13Z paused by operator: projected cost above ceiling (40.47 USD at 635/1274); in-flight runs discarded
+2026-10-29T12:47:38Z resumed (balance topped up by Javier); same design: no APEX, one run
+2026-10-29T13:50:51Z re-running      148 limit-hit Claude runs

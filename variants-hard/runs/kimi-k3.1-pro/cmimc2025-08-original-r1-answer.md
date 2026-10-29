@@ -1,0 +1,1 @@
+Voy a factorizar el cuártico y relacionar sus raíces con la forma radical indicada.

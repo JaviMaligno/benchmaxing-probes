@@ -1,0 +1,1 @@
+\(\boxed{\dfrac{4+\sqrt6+\sqrt2}{2}}\)

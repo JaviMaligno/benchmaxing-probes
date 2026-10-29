@@ -1,0 +1,24 @@
+## Solución
+
+Cada término del producto se puede simplificar usando la fórmula del cambio de base, $\log_b(7^x) = \dfrac{x \ln 7}{\ln b}$:
+
+$$\frac{\log_k(7^{k^2-1})}{\log_{k+1}(7^{k^2-4})} = \frac{(k^2-1)\,\ln 7 / \ln k}{(k^2-4)\,\ln 7 / \ln(k+1)} = \frac{k^2-1}{k^2-4}\cdot\frac{\ln(k+1)}{\ln k}.$$
+
+Factorizando, $\dfrac{k^2-1}{k^2-4} = \dfrac{(k-1)(k+1)}{(k-2)(k+2)}$. El producto se separa en tres partes telescópicas:
+
+**Parte logarítmica:**
+$$\prod_{k=3}^{80}\frac{\ln(k+1)}{\ln k} = \frac{\ln 81}{\ln 3} = \log_3 81 = 4.$$
+
+**Parte $\frac{k-1}{k-2}$:**
+$$\prod_{k=3}^{80}\frac{k-1}{k-2} = \frac{2}{1}\cdot\frac{3}{2}\cdots\frac{79}{78} = \frac{79}{1} = 79.$$
+
+**Parte $\frac{k+1}{k+2}$:**
+$$\prod_{k=3}^{80}\frac{k+1}{k+2} = \frac{4}{5}\cdot\frac{5}{6}\cdots\frac{81}{82} = \frac{4}{82} = \frac{2}{41}.$$
+
+Multiplicando todo:
+
+$$4 \cdot 79 \cdot \frac{2}{41} = \frac{632}{41}.$$
+
+Como $41$ es primo y no divide a $632$ ($632 = 41\cdot 15 + 17$), la fracción ya está en forma irreducible: $m = 632$, $n = 41$.
+
+$$m + n = 632 + 41 = \boxed{673}$$

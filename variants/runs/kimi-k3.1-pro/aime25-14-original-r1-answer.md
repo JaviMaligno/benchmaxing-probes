@@ -1,0 +1,1 @@
+Voy a determinar primero la configuración métrica y luego minimizar la suma de distancias.

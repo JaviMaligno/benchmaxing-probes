@@ -1,0 +1,1 @@
+Voy a resolver esto numéricamente con un script de Python: fijo el triángulo con el ángulo recto en B, encuentro P a partir de los valores dados de cos θ y sin θ, determino la recta l con la condición de conciclicidad de B, J, U, M, y calculo BL.

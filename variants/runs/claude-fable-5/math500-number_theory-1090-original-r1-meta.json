@@ -1,0 +1,50 @@
+{
+  "item": "math500-number_theory-1090",
+  "version": "original",
+  "rep": 1,
+  "requested_model": "claude-fable-5",
+  "actual_models": [
+    "claude-fable-5"
+  ],
+  "stop_reason": "end_turn",
+  "subtype": "success",
+  "is_error": false,
+  "seconds": 10.3,
+  "cost_list_usd": 0.041276999999999994,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 968,
+    "cache_read_input_tokens": 2847,
+    "output_tokens": 381,
+    "output_tokens_details": {
+      "thinking_tokens": 113
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 968,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 381,
+        "cache_read_input_tokens": 2847,
+        "cache_creation_input_tokens": 968,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 968
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": ""
+}

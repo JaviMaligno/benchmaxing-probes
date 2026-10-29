@@ -1,0 +1,1 @@
+Voy a resolverlo con un cálculo exacto por fuerza bruta (programación dinámica) para contar los valores de $N$ donde el algoritmo voraz es óptimo.

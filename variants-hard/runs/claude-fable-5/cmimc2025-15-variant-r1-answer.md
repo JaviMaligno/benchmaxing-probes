@@ -1,0 +1,1 @@
+Voy a calcular el valor exacto con una recursión con memoización (el estado es el multiconjunto restante y el último valor visto, que se reinicia tras cada descarte), ejecutándola en Python con fracciones exactas.

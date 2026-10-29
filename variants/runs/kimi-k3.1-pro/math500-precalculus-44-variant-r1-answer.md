@@ -1,0 +1,32 @@
+Agrupamos los términos y aplicamos las identidades de suma de ángulos:
+\[
+\begin{aligned}
+\text{Numerador}
+&=(\cos10^\circ\cos5^\circ-\sin10^\circ\sin5^\circ)
+ +(\cos55^\circ\cos80^\circ-\sin55^\circ\sin80^\circ)\\
+&=\cos15^\circ+\cos135^\circ
+=\cos15^\circ-\frac{\sqrt2}{2},\\[4pt]
+\text{Denominador}
+&=(\sin10^\circ\cos5^\circ+\cos10^\circ\sin5^\circ)
+ -(\sin55^\circ\cos80^\circ+\cos55^\circ\sin80^\circ)\\
+&=\sin15^\circ-\sin135^\circ
+=\sin15^\circ-\frac{\sqrt2}{2}.
+\end{aligned}
+\]
+Como
+\[
+\cos15^\circ=\frac{\sqrt6+\sqrt2}{4},
+\qquad
+\sin15^\circ=\frac{\sqrt6-\sqrt2}{4},
+\]
+obtenemos
+\[
+\tan\theta
+=\frac{\frac{\sqrt6-\sqrt2}{4}}{\frac{\sqrt6-3\sqrt2}{4}}
+=\frac{\sqrt3-1}{\sqrt3-3}
+=-\frac1{\sqrt3}.
+\]
+La tangente es negativa en los cuadrantes II y IV; el menor ángulo positivo está en el cuadrante II, con ángulo de referencia \(30^\circ\). Por tanto,
+\[
+\boxed{150^\circ}
+\]

@@ -1,0 +1,1 @@
+Voy a obtener una recurrencia para los bloques ternarios y después sumar sus aportes.

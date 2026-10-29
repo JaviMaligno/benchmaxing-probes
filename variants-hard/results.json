@@ -1,0 +1,237 @@
+{
+ "n_items": 91,
+ "models": {
+  "claude-fable-5": {
+   "acc_original": 0.901,
+   "acc_variant": 0.846,
+   "drop": 0.055,
+   "excess_drop": 0.046,
+   "ci95": [
+    -0.027,
+    0.123
+   ],
+   "p_raw": 0.26347365263473654,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.842,
+     "acc_variant": 0.763,
+     "excess_drop": 0.083
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.962,
+     "acc_variant": 0.846,
+     "excess_drop": 0.109
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.926,
+     "acc_variant": 0.963,
+     "excess_drop": -0.068
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "claude-opus-5": {
+   "acc_original": 0.846,
+   "acc_variant": 0.769,
+   "drop": 0.077,
+   "excess_drop": 0.071,
+   "ci95": [
+    -0.016,
+    0.161
+   ],
+   "p_raw": 0.14138586141385862,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.842,
+     "acc_variant": 0.763,
+     "excess_drop": 0.083
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.731,
+     "acc_variant": 0.731,
+     "excess_drop": -0.026
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.963,
+     "acc_variant": 0.815,
+     "excess_drop": 0.148
+    }
+   },
+   "p_holm": 0.9519,
+   "signal": false
+  },
+  "deepseek-v4-pro-0813": {
+   "acc_original": 0.604,
+   "acc_variant": 0.67,
+   "drop": -0.066,
+   "excess_drop": -0.095,
+   "ci95": [
+    -0.212,
+    0.027
+   ],
+   "p_raw": 0.135986401359864,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.684,
+     "acc_variant": 0.763,
+     "excess_drop": -0.101
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.5,
+     "acc_variant": 0.538,
+     "excess_drop": -0.071
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.593,
+     "acc_variant": 0.667,
+     "excess_drop": -0.111
+    }
+   },
+   "p_holm": 0.9519,
+   "signal": false
+  },
+  "gemini-4-argon": {
+   "acc_original": 0.978,
+   "acc_variant": 0.989,
+   "drop": -0.011,
+   "excess_drop": -0.031,
+   "ci95": [
+    -0.092,
+    0.026
+   ],
+   "p_raw": 0.33666633336666335,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.974,
+     "acc_variant": 0.974,
+     "excess_drop": -0.009
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 1.0,
+     "acc_variant": 1.0,
+     "excess_drop": -0.026
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.963,
+     "acc_variant": 1.0,
+     "excess_drop": -0.068
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "glm-5.3": {
+   "acc_original": 0.758,
+   "acc_variant": 0.758,
+   "drop": 0.0,
+   "excess_drop": -0.018,
+   "ci95": [
+    -0.106,
+    0.07
+   ],
+   "p_raw": 0.714028597140286,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.737,
+     "acc_variant": 0.737,
+     "excess_drop": -0.009
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.692,
+     "acc_variant": 0.654,
+     "excess_drop": 0.019
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.852,
+     "acc_variant": 0.889,
+     "excess_drop": -0.068
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "kimi-k3.1-pro": {
+   "acc_original": 0.824,
+   "acc_variant": 0.758,
+   "drop": 0.066,
+   "excess_drop": 0.059,
+   "ci95": [
+    -0.057,
+    0.176
+   ],
+   "p_raw": 0.3417658234176582,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.816,
+     "acc_variant": 0.789,
+     "excess_drop": 0.022
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.731,
+     "acc_variant": 0.654,
+     "excess_drop": 0.064
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 0.926,
+     "acc_variant": 0.815,
+     "excess_drop": 0.105
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "qwen3.8-2.4t-a95b": {
+   "acc_original": 0.901,
+   "acc_variant": 0.912,
+   "drop": -0.011,
+   "excess_drop": -0.031,
+   "ci95": [
+    -0.097,
+    0.035
+   ],
+   "p_raw": 0.3895610438956104,
+   "by_source": {
+    "CMIMC 2025": {
+     "n": 38,
+     "acc_original": 0.842,
+     "acc_variant": 0.895,
+     "excess_drop": -0.07
+    },
+    "HMMT Feb 2024": {
+     "n": 26,
+     "acc_original": 0.885,
+     "acc_variant": 0.923,
+     "excess_drop": -0.071
+    },
+    "HMMT Feb 2025": {
+     "n": 27,
+     "acc_original": 1.0,
+     "acc_variant": 0.926,
+     "excess_drop": 0.062
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  }
+ },
+ "sensitivity_no_unboxed": false
+}

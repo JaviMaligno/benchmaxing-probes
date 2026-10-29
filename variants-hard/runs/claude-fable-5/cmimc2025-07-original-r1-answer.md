@@ -1,0 +1,1 @@
+Voy a resolver esto computando la secuencia directamente con un script de Python, ya que $a_n$ solo tiene hasta 810 dígitos y es trivial calcular $\nu_3$ exactamente.

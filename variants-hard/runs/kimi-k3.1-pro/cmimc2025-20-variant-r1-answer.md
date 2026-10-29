@@ -1,0 +1,1 @@
+Voy a obtener una recurrencia para los bloques de longitud \(3^n\), trabajando módulo \(3\), y después sumar los residuos como enteros.

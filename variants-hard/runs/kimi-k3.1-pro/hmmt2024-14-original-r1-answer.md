@@ -1,0 +1,1 @@
+I’ll compute the path count with a column-by-column dynamic program and check it against small cases.

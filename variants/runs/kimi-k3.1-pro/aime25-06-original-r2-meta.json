@@ -1,0 +1,38 @@
+{
+  "item": "aime25-06",
+  "version": "original",
+  "rep": 2,
+  "requested_model": "moonshotai/kimi-k3.1-pro",
+  "actual_models": [
+    "moonshotai/kimi-k3.1-pro"
+  ],
+  "stop_reason": "end_turn",
+  "subtype": "success",
+  "is_error": false,
+  "seconds": 17.6,
+  "cost_list_usd": 0.016484,
+  "usage": {
+    "input_tokens": 1606,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 503,
+    "output_tokens_details": {
+      "thinking_tokens": 247
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": "[claude-code:unrecognized_model] {\"model\":\"moonshotai/kimi-k3.1-pro\",\"query_source\":\"sdk\"}\n"
+}

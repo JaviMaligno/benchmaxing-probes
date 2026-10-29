@@ -1,0 +1,2 @@
+
+{"name": "Bash", "command": "python3 -Ic \"\nrow=[(j+1)%5 for j in range(5)]\nfor i in range(1,2025):\n    new=[0]*5\n    new[0]=row[2]\n    for j in range(1,5):\n        new[j]=row[new[j-1]]\n    row=new\nprint(row)\n\"", "description": "Compute rows of g iteratively"}

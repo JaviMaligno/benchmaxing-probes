@@ -1,0 +1,1 @@
+La respuesta es \(\boxed{731}\).

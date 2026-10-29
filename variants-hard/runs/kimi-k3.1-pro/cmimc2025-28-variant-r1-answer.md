@@ -1,0 +1,1 @@
+Podemos fijar coordenadas con \(O=(0,0)\), \(P=(-10,0)\) y \(Q=(10,0)\), y aprovechar que los ángulos \(\angle PRQ\) y \(\angle PSQ\) son rectos.

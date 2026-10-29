@@ -1,0 +1,1 @@
+\boxed{\dfrac{3+5\sqrt{3}}{8}}

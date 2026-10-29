@@ -1,0 +1,1 @@
+Voy a plantear la ecuación de la parábola rotada y combinarla con la original para obtener la coordenada pedida.

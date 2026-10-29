@@ -1,0 +1,195 @@
+{
+ "n_items": 94,
+ "models": {
+  "claude-fable-5": {
+   "acc_original": 0.989,
+   "acc_variant": 1.0,
+   "drop": -0.011,
+   "excess_drop": -0.014,
+   "ci95": [
+    -0.037,
+    0.003
+   ],
+   "p_raw": 0.21137886211378862,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 1.0,
+     "acc_variant": 1.0,
+     "excess_drop": -0.008
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 0.988,
+     "acc_variant": 1.0,
+     "excess_drop": -0.015
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "claude-opus-5": {
+   "acc_original": 0.989,
+   "acc_variant": 0.995,
+   "drop": -0.005,
+   "excess_drop": -0.008,
+   "ci95": [
+    -0.032,
+    0.012
+   ],
+   "p_raw": 0.5924407559244076,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 1.0,
+     "acc_variant": 1.0,
+     "excess_drop": -0.008
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 0.988,
+     "acc_variant": 0.994,
+     "excess_drop": -0.008
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "deepseek-v4-pro-0813": {
+   "acc_original": 0.915,
+   "acc_variant": 0.904,
+   "drop": 0.011,
+   "excess_drop": 0.011,
+   "ci95": [
+    -0.043,
+    0.068
+   ],
+   "p_raw": 0.7361263873612639,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 0.864,
+     "acc_variant": 0.909,
+     "excess_drop": -0.061
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 0.922,
+     "acc_variant": 0.904,
+     "excess_drop": 0.02
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "gemini-4-argon": {
+   "acc_original": 1.0,
+   "acc_variant": 1.0,
+   "drop": 0.0,
+   "excess_drop": -0.002,
+   "ci95": [
+    -0.014,
+    0.012
+   ],
+   "p_raw": 0.8938106189381062,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 1.0,
+     "acc_variant": 1.0,
+     "excess_drop": -0.008
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 1.0,
+     "acc_variant": 1.0,
+     "excess_drop": -0.001
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "glm-5.3": {
+   "acc_original": 0.979,
+   "acc_variant": 0.984,
+   "drop": -0.005,
+   "excess_drop": -0.008,
+   "ci95": [
+    -0.034,
+    0.018
+   ],
+   "p_raw": 0.5951404859514049,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 0.955,
+     "acc_variant": 0.909,
+     "excess_drop": 0.045
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 0.982,
+     "acc_variant": 0.994,
+     "excess_drop": -0.015
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  },
+  "kimi-k3.1-pro": {
+   "acc_original": 1.0,
+   "acc_variant": 0.979,
+   "drop": 0.021,
+   "excess_drop": 0.023,
+   "ci95": [
+    0.001,
+    0.05
+   ],
+   "p_raw": 0.07949205079492051,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 1.0,
+     "acc_variant": 0.909,
+     "excess_drop": 0.098
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 1.0,
+     "acc_variant": 0.988,
+     "excess_drop": 0.013
+    }
+   },
+   "p_holm": 0.5564,
+   "signal": false
+  },
+  "qwen3.8-2.4t-a95b": {
+   "acc_original": 0.995,
+   "acc_variant": 0.995,
+   "drop": 0.0,
+   "excess_drop": -0.002,
+   "ci95": [
+    -0.022,
+    0.019
+   ],
+   "p_raw": 0.9362063793620637,
+   "by_source": {
+    "AIME 2025": {
+     "n": 11,
+     "acc_original": 0.955,
+     "acc_variant": 1.0,
+     "excess_drop": -0.061
+    },
+    "MATH-500 L5": {
+     "n": 83,
+     "acc_original": 1.0,
+     "acc_variant": 0.994,
+     "excess_drop": 0.006
+    }
+   },
+   "p_holm": 1.0,
+   "signal": false
+  }
+ },
+ "sensitivity_no_unboxed": true
+}

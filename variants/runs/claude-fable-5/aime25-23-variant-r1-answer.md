@@ -1,0 +1,1 @@
+Voy a resolverlo con un cálculo exacto por fuerza bruta en Python, comparando el conteo del algoritmo voraz con el mínimo real para cada N de 1 a 1000.
