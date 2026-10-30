@@ -1,0 +1,33 @@
+{
+  "scenario": "vendors-hard",
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "rep": 1,
+  "seconds": 771.0,
+  "subtype": "success",
+  "is_error": false,
+  "num_turns": 26,
+  "usage": {
+    "input_tokens": 69060,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 111104,
+    "output_tokens": 13289,
+    "output_tokens_details": {
+      "thinking_tokens": 9714
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "asap",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": "[claude-code:unrecognized_model] {\"model\":\"deepseek/deepseek-v4-pro-0813\",\"query_source\":\"sdk\"}\n"
+}

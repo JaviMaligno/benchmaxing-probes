@@ -1,0 +1,12 @@
+incident_id,opened,severity,status
+INC-HAL101,2026-01-18,P3,confirmed
+INC-HAL301,2026-09-24,P1,disputed
+INC-HAL100,2026-05-05,P2,withdrawn
+INC-HAL102,2026-09-15,P2,confirmed
+INC-HAL200,2026-08-03,P1,confirmed
+INC-HAL103,2026-06-06,P2,confirmed
+INC-HAL203,2026-07-09,P1,confirmed
+INC-HAL201,2026-08-13,P1,confirmed
+INC-HAL300,2026-02-19,P1,disputed
+INC-HAL104,2026-01-03,P3,confirmed
+INC-HAL202,2026-07-12,P1,confirmed

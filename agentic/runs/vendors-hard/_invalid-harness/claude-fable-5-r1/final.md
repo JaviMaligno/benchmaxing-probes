@@ -1,0 +1,1 @@
+Confirmado: INC-TES200 e INC-TES201 aparecen duplicados y, tras deduplicar, Tessel Cloud queda con 3 P1 confirmados frente a un umbral de 3, es decir, sin incumplimiento, tal como informó el subagente. Quedan tres grupos por terminar.

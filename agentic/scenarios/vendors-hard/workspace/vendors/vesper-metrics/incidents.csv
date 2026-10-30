@@ -1,0 +1,14 @@
+incident_id,opened,severity,status
+INC-VES104,2026-02-13,P2,disputed
+INC-VES107,2026-08-16,P2,disputed
+INC-VES103,2026-08-25,P3,withdrawn
+INC-VES200,2026-09-10,P1,confirmed
+INC-VES108,2026-04-07,P3,disputed
+INC-VES202,2026-05-12,P1,confirmed
+INC-VES201,2026-04-13,P1,confirmed
+INC-VES102,2026-03-24,P3,withdrawn
+INC-VES300,2026-07-17,P1,withdrawn
+INC-VES101,2026-05-19,P2,disputed
+INC-VES106,2026-01-09,P2,disputed
+INC-VES100,2026-05-26,P3,disputed
+INC-VES105,2026-04-03,P3,withdrawn

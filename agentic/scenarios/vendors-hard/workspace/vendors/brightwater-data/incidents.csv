@@ -1,0 +1,12 @@
+incident_id,opened,severity,status
+INC-BRI107,2026-02-02,P2,withdrawn
+INC-BRI100,2026-06-05,P2,disputed
+INC-BRI300,2026-09-13,P1,withdrawn
+INC-BRI102,2026-03-27,P2,disputed
+INC-BRI200,2026-04-06,P1,confirmed
+INC-BRI104,2026-09-25,P3,withdrawn
+INC-BRI103,2026-08-19,P3,confirmed
+INC-BRI301,2026-05-01,P1,disputed
+INC-BRI106,2026-01-26,P3,confirmed
+INC-BRI101,2026-09-12,P2,disputed
+INC-BRI105,2026-02-14,P3,withdrawn

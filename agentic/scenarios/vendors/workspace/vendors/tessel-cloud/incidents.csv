@@ -1,0 +1,14 @@
+incident_id,opened,severity,status
+INC-TE103,2026-02-09,P1,withdrawn
+INC-TE104,2026-04-10,P2,withdrawn
+INC-TE105,2026-08-20,P2,confirmed
+INC-TE202,2026-03-14,P1,confirmed
+INC-TE107,2026-04-06,P2,withdrawn
+INC-TE201,2026-06-27,P1,confirmed
+INC-TE300,2026-05-14,P1,disputed
+INC-TE101,2026-01-21,P2,confirmed
+INC-TE100,2026-04-24,P2,withdrawn
+INC-TE106,2026-09-12,P3,disputed
+INC-TE200,2026-07-22,P1,confirmed
+INC-TE201,2026-06-27,P1,confirmed
+INC-TE200,2026-07-22,P1,confirmed

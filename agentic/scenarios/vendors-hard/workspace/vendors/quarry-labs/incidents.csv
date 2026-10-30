@@ -1,0 +1,13 @@
+incident_id,opened,severity,status
+INC-QUA104,2026-01-24,P3,disputed
+INC-QUA202,2026-06-08,P1,confirmed
+INC-QUA101,2026-07-09,P2,confirmed
+INC-QUA201,2026-09-26,P1,confirmed
+INC-QUA200,2026-09-03,P1,confirmed
+INC-QUA106,2026-08-08,P3,withdrawn
+INC-QUA300,2026-08-03,P1,withdrawn
+INC-QUA203,2026-08-01,P1,confirmed
+INC-QUA100,2026-02-06,P3,confirmed
+INC-QUA102,2026-06-13,P2,withdrawn
+INC-QUA103,2026-05-23,P2,disputed
+INC-QUA105,2026-05-18,P2,withdrawn

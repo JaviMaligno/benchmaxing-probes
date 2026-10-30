@@ -1,0 +1,14 @@
+incident_id,opened,severity,status
+INC-IRO200,2026-06-01,P1,confirmed
+INC-IRO101,2026-07-19,P2,disputed
+INC-IRO104,2026-09-10,P2,disputed
+INC-IRO106,2026-08-09,P3,withdrawn
+INC-IRO201,2026-06-24,P1,confirmed
+INC-IRO300,2026-06-09,P1,withdrawn
+INC-IRO301,2026-03-15,P1,disputed
+INC-IRO102,2026-07-11,P2,withdrawn
+INC-IRO107,2026-05-27,P2,withdrawn
+INC-IRO103,2026-08-27,P2,disputed
+INC-IRO100,2026-08-22,P2,confirmed
+INC-IRO202,2026-08-12,P1,confirmed
+INC-IRO105,2026-01-01,P2,confirmed

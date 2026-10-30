@@ -1,0 +1,5 @@
+Llegó un informe tardío de un subagente huérfano del lote 4: no trae totales (quedó bloqueado por la falta de ejecución de código), solo confirma que en Fennel Networks, Marlow Secure y Pellucid AI no hay líneas fuera de ventana ni `invoice_id` duplicados, que Fennel y Marlow facturan en GBP y Pellucid en USD. No cambia nada de lo anterior: esos tres vendors siguen sin coste ni recuento de P1, igual que los otros seis pendientes.
+
+```json
+{"vendors": {"Ironbark IT": {"cost_gbp": 36687.16, "p1_counted": 3, "breach": false}, "Kestrel Ops": {"cost_gbp": 37990.07, "p1_counted": 1, "breach": false}, "Strand Hosting": {"cost_gbp": 44736.33, "p1_counted": 1, "breach": false}, "Cobalt Ledger": {"cost_gbp": 46280.48, "p1_counted": 4, "breach": false}, "Brightwater Data": {"cost_gbp": 59129.65, "p1_counted": 1, "breach": false}, "Vesper Metrics": {"cost_gbp": 78466.33, "p1_counted": 3, "breach": false}}, "recommended": ["Kestrel Ops", "Strand Hosting", "Cobalt Ledger"]}
+```

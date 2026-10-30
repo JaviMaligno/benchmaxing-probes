@@ -1,0 +1,12 @@
+incident_id,opened,severity,status
+INC-FEN100,2026-03-05,P2,disputed
+INC-FEN300,2026-09-06,P1,disputed
+INC-FEN105,2026-03-21,P3,disputed
+INC-FEN101,2026-09-22,P3,withdrawn
+INC-FEN201,2026-05-23,P1,confirmed
+INC-FEN104,2026-05-02,P3,disputed
+INC-FEN102,2026-05-08,P3,withdrawn
+INC-FEN103,2026-03-13,P2,withdrawn
+INC-FEN301,2026-02-06,P1,disputed
+INC-FEN202,2026-04-09,P1,confirmed
+INC-FEN200,2026-02-05,P1,confirmed

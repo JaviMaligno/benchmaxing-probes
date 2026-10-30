@@ -1,0 +1,10 @@
+incident_id,opened,severity,status
+INC-PEL102,2026-02-05,P2,confirmed
+INC-PEL100,2026-07-10,P3,confirmed
+INC-PEL105,2026-01-08,P3,disputed
+INC-PEL101,2026-07-25,P2,confirmed
+INC-PEL201,2026-04-18,P1,confirmed
+INC-PEL104,2026-05-10,P3,confirmed
+INC-PEL200,2026-02-17,P1,confirmed
+INC-PEL300,2026-04-12,P1,withdrawn
+INC-PEL103,2026-02-08,P3,confirmed

@@ -1,0 +1,217 @@
+{
+ "vendors": {
+  "Halden Systems": {
+   "cost_gbp": 50394.31,
+   "p1_counted": 4,
+   "breach": false
+  },
+  "Norvik Data": {
+   "cost_gbp": 50989.43,
+   "p1_counted": 6,
+   "breach": true
+  },
+  "Quarry Labs": {
+   "cost_gbp": 69935.3,
+   "p1_counted": 4,
+   "breach": false
+  },
+  "Tessel Cloud": {
+   "cost_gbp": 62119.79,
+   "p1_counted": 3,
+   "breach": false
+  },
+  "Ombra Analytics": {
+   "cost_gbp": 57037.31,
+   "p1_counted": 3,
+   "breach": true
+  },
+  "Larch Compute": {
+   "cost_gbp": 49428.61,
+   "p1_counted": 4,
+   "breach": true
+  },
+  "Vesper Metrics": {
+   "cost_gbp": 78466.33,
+   "p1_counted": 3,
+   "breach": false
+  },
+  "Ironbark IT": {
+   "cost_gbp": 36687.16,
+   "p1_counted": 3,
+   "breach": false
+  },
+  "Cobalt Ledger": {
+   "cost_gbp": 46280.48,
+   "p1_counted": 4,
+   "breach": false
+  },
+  "Fennel Networks": {
+   "cost_gbp": 48962.26,
+   "p1_counted": 3,
+   "breach": true
+  },
+  "Marlow Secure": {
+   "cost_gbp": 45137.43,
+   "p1_counted": 5,
+   "breach": true
+  },
+  "Pellucid AI": {
+   "cost_gbp": 47325.62,
+   "p1_counted": 2,
+   "breach": false
+  },
+  "Strand Hosting": {
+   "cost_gbp": 44736.33,
+   "p1_counted": 1,
+   "breach": false
+  },
+  "Kestrel Ops": {
+   "cost_gbp": 37990.08,
+   "p1_counted": 1,
+   "breach": false
+  },
+  "Brightwater Data": {
+   "cost_gbp": 59129.65,
+   "p1_counted": 1,
+   "breach": false
+  }
+ },
+ "traps": {
+  "fx_monthly": [
+   [
+    "Norvik Data",
+    "cost"
+   ],
+   [
+    "Larch Compute",
+    "cost"
+   ],
+   [
+    "Cobalt Ledger",
+    "cost"
+   ],
+   [
+    "Pellucid AI",
+    "cost"
+   ],
+   [
+    "Kestrel Ops",
+    "cost"
+   ]
+  ],
+  "amendment_chain": [
+   [
+    "Vesper Metrics",
+    "cost"
+   ]
+  ],
+  "credit_note": [
+   [
+    "Strand Hosting",
+    "cost"
+   ]
+  ],
+  "stale_summary": [
+   [
+    "Halden Systems",
+    "cost"
+   ],
+   [
+    "Ironbark IT",
+    "cost"
+   ],
+   [
+    "Fennel Networks",
+    "cost"
+   ],
+   [
+    "Brightwater Data",
+    "cost"
+   ]
+  ],
+  "duplicates": [
+   [
+    "Tessel Cloud",
+    "p1"
+   ],
+   [
+    "Marlow Secure",
+    "p1"
+   ]
+  ],
+  "status_rule": [
+   [
+    "Halden Systems",
+    "p1"
+   ],
+   [
+    "Norvik Data",
+    "p1"
+   ],
+   [
+    "Quarry Labs",
+    "p1"
+   ],
+   [
+    "Tessel Cloud",
+    "p1"
+   ],
+   [
+    "Ombra Analytics",
+    "p1"
+   ],
+   [
+    "Larch Compute",
+    "p1"
+   ],
+   [
+    "Vesper Metrics",
+    "p1"
+   ],
+   [
+    "Ironbark IT",
+    "p1"
+   ],
+   [
+    "Cobalt Ledger",
+    "p1"
+   ],
+   [
+    "Fennel Networks",
+    "p1"
+   ],
+   [
+    "Marlow Secure",
+    "p1"
+   ],
+   [
+    "Pellucid AI",
+    "p1"
+   ],
+   [
+    "Strand Hosting",
+    "p1"
+   ],
+   [
+    "Kestrel Ops",
+    "p1"
+   ],
+   [
+    "Brightwater Data",
+    "p1"
+   ]
+  ],
+  "acquisition": [
+   [
+    "Ironbark IT",
+    "recommended"
+   ]
+  ]
+ },
+ "recommended": [
+  "Kestrel Ops",
+  "Strand Hosting",
+  "Cobalt Ledger"
+ ],
+ "acquisition_matters": true
+}

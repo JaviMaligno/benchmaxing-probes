@@ -1,0 +1,12 @@
+{
+  "scenario": "vendors-hard",
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "rep": 1,
+  "seconds": 2400.1,
+  "subtype": null,
+  "is_error": null,
+  "num_turns": null,
+  "usage": null,
+  "returncode": -9,
+  "stderr_tail": "timeout"
+}

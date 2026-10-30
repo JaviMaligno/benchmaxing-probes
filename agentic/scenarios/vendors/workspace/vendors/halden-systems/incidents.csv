@@ -1,0 +1,12 @@
+incident_id,opened,severity,status
+INC-HA201,2026-03-19,P1,confirmed
+INC-HA107,2026-07-18,P2,confirmed
+INC-HA102,2026-02-01,P2,confirmed
+INC-HA104,2026-07-11,P3,withdrawn
+INC-HA106,2026-03-20,P3,disputed
+INC-HA200,2026-04-24,P1,confirmed
+INC-HA100,2026-02-11,P2,confirmed
+INC-HA103,2026-06-24,P2,confirmed
+INC-HA108,2026-01-15,P2,confirmed
+INC-HA300,2026-05-14,P1,disputed
+INC-HA101,2026-03-22,P2,disputed

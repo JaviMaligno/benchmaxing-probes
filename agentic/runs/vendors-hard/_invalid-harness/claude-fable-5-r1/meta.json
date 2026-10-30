@@ -1,0 +1,45 @@
+{
+  "scenario": "vendors-hard",
+  "model": "claude-fable-5",
+  "rep": 1,
+  "seconds": 416.2,
+  "subtype": "success",
+  "is_error": false,
+  "num_turns": 2,
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 4816,
+    "cache_read_input_tokens": 54226,
+    "output_tokens": 417,
+    "output_tokens_details": {
+      "thinking_tokens": 109
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 4816,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 179,
+        "cache_read_input_tokens": 29186,
+        "cache_creation_input_tokens": 670,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 670
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "returncode": 0,
+  "stderr_tail": "Budget limit reached ($11.45 of $10); stopping background agents.\n"
+}

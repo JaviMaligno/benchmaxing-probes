@@ -1,0 +1,10 @@
+incident_id,opened,severity,status
+INC-KES100,2026-03-14,P3,confirmed
+INC-KES103,2026-05-03,P2,withdrawn
+INC-KES105,2026-07-15,P3,disputed
+INC-KES200,2026-02-05,P1,confirmed
+INC-KES106,2026-09-26,P2,confirmed
+INC-KES104,2026-07-20,P3,disputed
+INC-KES102,2026-05-04,P3,confirmed
+INC-KES101,2026-04-20,P3,withdrawn
+INC-KES300,2026-06-16,P1,withdrawn

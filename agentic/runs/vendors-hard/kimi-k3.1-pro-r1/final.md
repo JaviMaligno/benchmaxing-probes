@@ -1,0 +1,1 @@
+Los subtotales mensuales de la comprobación adicional confirman el coste de **Kestrel Ops: 37.990,08 GBP**. Los resultados y las recomendaciones enviados permanecen sin cambios.

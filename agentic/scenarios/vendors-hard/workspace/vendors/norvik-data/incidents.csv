@@ -1,0 +1,14 @@
+incident_id,opened,severity,status
+INC-NOR203,2026-07-22,P1,confirmed
+INC-NOR103,2026-07-27,P3,withdrawn
+INC-NOR201,2026-04-27,P1,confirmed
+INC-NOR102,2026-02-21,P2,confirmed
+INC-NOR204,2026-03-22,P1,confirmed
+INC-NOR205,2026-02-24,P1,confirmed
+INC-NOR104,2026-03-16,P2,disputed
+INC-NOR202,2026-08-01,P1,confirmed
+INC-NOR101,2026-08-10,P2,withdrawn
+INC-NOR100,2026-03-23,P3,disputed
+INC-NOR105,2026-06-21,P3,withdrawn
+INC-NOR300,2026-03-17,P1,withdrawn
+INC-NOR200,2026-02-27,P1,confirmed

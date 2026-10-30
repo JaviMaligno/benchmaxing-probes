@@ -43,6 +43,12 @@ The accompanying article is a draft awaiting review. This repository contains th
 - `variants-hard/`: the same on 91 harder items (HMMT February 2024/2025, CMIMC 2025), one run each.
   APEX 2025 was dropped on cost; see `deviations.md`. `runs/_limit-hit/` keeps the Claude runs cut by a
   plan limit, re-run as preregistered.
+- `agentic/`: a conductor managing its own subagents (same model) through Claude Code with read-only
+  tools, two seeded vendor-review scenarios (`scenarios/*/generate.py`, `task.md`, `key.json`).
+  `run_agentic.py` (runner with spend cap), `score.py` (key + process measures), `assessment.md`
+  (results: both scenarios at ceiling), `runs/` (transcripts; per-run workspace copies omitted, they equal
+  `scenarios/*/workspace`). `runs/vendors-hard/_invalid-harness/` keeps the pilot runs broken by harness
+  faults.
 
 Recheck without calling models: `python grade.py && python analyze.py` in `variants/`, and
 `python grade.py && REPS=1 python analyze.py` in `variants-hard/`. Model answers that quoted the

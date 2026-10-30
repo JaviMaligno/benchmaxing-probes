@@ -1,0 +1,10 @@
+incident_id,opened,severity,status
+INC-STR100,2026-08-03,P3,confirmed
+INC-STR105,2026-09-16,P3,disputed
+INC-STR300,2026-06-08,P1,withdrawn
+INC-STR301,2026-01-05,P1,disputed
+INC-STR103,2026-09-09,P3,confirmed
+INC-STR104,2026-01-10,P2,disputed
+INC-STR102,2026-03-13,P3,confirmed
+INC-STR101,2026-04-09,P2,disputed
+INC-STR200,2026-07-02,P1,confirmed

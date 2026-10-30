@@ -1,0 +1,8 @@
+OpenRouter usage at start 10498.36; cap 15.0 USD
+claude-fable-5 r1: success turns=10 116.0s
+claude-opus-5 r1: success turns=4 151.6s
+kimi-k3.1-pro r1: success turns=29 163.2s
+gemini-4-argon r1: success turns=26 186.5s
+qwen3.8-2.4t-a95b r1: success turns=20 200.3s
+deepseek-v4-pro-0813 r1: success turns=28 203.1s
+spent this invocation 2.50 USD

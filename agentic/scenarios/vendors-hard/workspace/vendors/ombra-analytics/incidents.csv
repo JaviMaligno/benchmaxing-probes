@@ -1,0 +1,13 @@
+incident_id,opened,severity,status
+INC-OMB301,2026-07-28,P1,disputed
+INC-OMB105,2026-07-08,P2,disputed
+INC-OMB104,2026-06-13,P3,withdrawn
+INC-OMB101,2026-05-11,P2,withdrawn
+INC-OMB102,2026-02-22,P3,confirmed
+INC-OMB300,2026-05-12,P1,withdrawn
+INC-OMB106,2026-01-08,P3,disputed
+INC-OMB103,2026-01-04,P3,disputed
+INC-OMB201,2026-07-08,P1,confirmed
+INC-OMB200,2026-05-20,P1,confirmed
+INC-OMB202,2026-08-14,P1,confirmed
+INC-OMB100,2026-03-03,P3,confirmed

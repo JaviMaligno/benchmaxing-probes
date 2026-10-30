@@ -1,0 +1,1 @@
+14 de 15 (se suma Brightwater Data, 59.129,65 GBP, sin breach). Solo queda Larch Compute en marcha.
